@@ -7,22 +7,79 @@
 
 </head>
 <body>
-    <h1 class="topic"> On Love 
+    <h1 class="topic">  <span id="topic"></span>
     </h1>
-    <div class="image-container">
+    <div id="background-image" class="image-container">
         <div class="quote-container">
             <div class="center-container"
-                <p> Shall I compare thee to a summer’s day?
-                    Thou art more lovely and more temperate:
-                    Rough winds do shake the darling buds of May,
-                    And summer’s lease hath all too short a date
+                <p>   <span id="quote"></span>
                 </p>
-                <div class="author"> William Shakespear
+                <div class="author"> <span id="author"></span>
                 </div>
             </div>
         </div>
-
     </div>
-</body>
+    <html>
+<head>
+</head>
 
+<script>
+    var quote_list = [
+        {
+            "topic": "On Love",
+            "css_class": "love",
+            "author": "William Shakespear",
+            "quote": "Shall I compare thee to a summer’s day? \
+                    Thou art more lovely and more temperate: \
+                    Rough winds do shake the darling buds of May, \
+                    And summer’s lease hath all too short a date"
+        },
+        {
+            "topic": "On Love",
+            "css_class": "love",
+            "author": "William Shakespear",
+            "quote": "Good night, good night! Parting is such sweet sorrow, that I shall say good night till it be morrow"
+        },
+        {
+            "topic": "On Love",
+            "css_class": "love",
+            "author": "William Shakespear",
+            "quote": "Your lips are like wine, and i want to get drunk"
+        },
+        {
+            "topic": "On Love",
+            "css_class": "love",
+            "author": "William Shakespear",
+            "quote": "Love looks not with the eyes, but with the mind, And therefore is winged Cupid painted blind"
+        },  
+        {
+            "topic": "On War",
+            "css_class": "war",
+            "author": "Plato",
+            "quote": "Only the dead have seen the end of war"
+        },   
+        {
+            "topic": "On War",
+            "css_class": "war",
+            "author": "Sun Tzu",
+            "quote": "Appear weak when you are strong, and strong when you are weak"
+        },  
+        {
+            "topic": "On War",
+            "css_class": "war",
+            "author": "Sophocles",
+            "quote": "A mind at peace does not engender wars"
+        }, 
+    ];
+    var random_index = Math.floor(Math.random() * quote_list.length);
+    var one_quote = quote_list[random_index];
+    console.log(one_quote)
+    document.getElementById("background-image").classList.add(one_quote.css_class);
+    document.getElementById("topic").innerHTML = one_quote.topic;
+    document.getElementById("author").innerHTML = one_quote.author;
+    document.getElementById("quote").innerHTML = one_quote.quote;
+</script>
+
+
+</body>
 </html>

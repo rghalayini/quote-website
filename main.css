@@ -5,8 +5,13 @@ h1.topic {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
+div.image-container.love {
+    background-image: url("backgroundlove.jpg");
+}
+div.image-container.war {
+    background-image: url("backgroundwar.jpg");
+}
 div.image-container {
-    background-image: url("background.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,6 +21,7 @@ div.image-container {
     top: 10%;
     position: relative;
 }
+
 div.center-container {
     background:white;
     opacity: 70%;
